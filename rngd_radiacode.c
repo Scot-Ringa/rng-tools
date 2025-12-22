@@ -318,7 +318,7 @@ static int radiacode_get_data(float *count_rate, float *dose_rate)
 	}
 	last_data_len = data_len;
 	
-	/* Mix entropy sources */
+	/* Mix entropy: event hash, decay intervals, timestamps, buffer state */
 	uint32_t entropy_mix = event_hash ^ 
 	                       (uint32_t)(interval_ns & 0xFFFFFFFF) ^
 	                       (uint32_t)(interval_ns >> 32) ^
