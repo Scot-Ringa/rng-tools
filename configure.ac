@@ -79,9 +79,6 @@ dnl Checks for programs
 AC_PROG_CC
 AC_PROG_RANLIB
 AM_PROG_AR
-AC_PROG_GCC_TRADITIONAL
-
-AX_PTHREAD
 
 dnl Checks for header files.
 AC_CHECK_HEADERS(sys/auxv.h)
